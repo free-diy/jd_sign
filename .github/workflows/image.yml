@@ -1,9 +1,9 @@
-name: 构建sign
+name: 构建jg_sign
 
 on:
   push:
     branches:
-      - ma
+      - main
 
 jobs:
   buildx:
@@ -22,7 +22,7 @@ jobs:
 
     - name: Build and push
       run: |
-        docker buildx build --push -t freediy/sign:latest .
+        docker buildx build --push -t freediy/jd_sign:latest .
 
     - name: Cleanup
       run: |
