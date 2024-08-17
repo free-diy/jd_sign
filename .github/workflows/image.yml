@@ -3,7 +3,7 @@ name: 构建sign
 on:
   push:
     branches:
-      - main
+      - ma
 
 jobs:
   buildx:
